@@ -1,13 +1,13 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDqo4efGOvkxUKejYNReVVghkZIIgc5jVk',
-  authDomain: 'kabisa-quoteria.firebaseapp.com',
-  databaseURL: 'https://kabisa-quoteria-default-rtdb.europe-west1.firebasedatabase.app',
-  projectId: 'kabisa-quoteria',
-  storageBucket: 'kabisa-quoteria.appspot.com',
-  messagingSenderId: '301453449889',
-  appId: '1:301453449889:web:075307353996ece110aee0',
+  apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+  authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.VUE_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGE_SENDER_ID,
+  appId: process.env.VUE_APP_FIREBASE_APP_ID,
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
