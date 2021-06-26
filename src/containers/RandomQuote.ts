@@ -23,6 +23,7 @@ export default QuoteInteractions.extend({
   render(h): VNode {
     return h('quote-card', {
       props: { quote: this.quote, stats: this.stats, timer: 30000 },
+      class: 'kq-quote--random',
       on: { like: () => this.toggleLike(this.quote!), timeout: this.getQuote },
     });
   },

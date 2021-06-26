@@ -2,9 +2,11 @@
   <v-container>
     <random-quote :class="{ 'mt-10': $vuetify.breakpoint.mdAndUp }" />
 
-    <h1 class="text-h2 text-center mt-15" :class="{ 'pt-15': $vuetify.breakpoint.lgdAndUp }">
-      Top 10 Quotes
-    </h1>
+    <h1
+      class="text-h2 text-center mt-15"
+      :class="{ 'pt-15': $vuetify.breakpoint.lgdAndUp }"
+      v-text="$t('labels.topTenQuotes')"
+    ></h1>
     <v-divider class="my-12" />
 
     <v-row justify="center">

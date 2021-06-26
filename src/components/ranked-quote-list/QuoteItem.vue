@@ -14,9 +14,17 @@
         type="list-item-three-line, card-heading"
       ></v-skeleton-loader>
       <template v-else>
-        <div class="headline font-quote kq-quote__quote" v-text="item.quote.quote"></div>
+        <div
+          class="headline font-quote kq-quote__quote"
+          v-text="item.quote.quote"
+          :title="$t('labels.quote')"
+        ></div>
         <div class="mt-3 d-flex justify-space-between align-center">
-          <span class="subtitle-1 font-quote kq-quote__author" v-text="item.quote.author" />
+          <span
+            class="subtitle-1 font-quote kq-quote__author"
+            v-text="item.quote.author"
+            :title="$t('labels.author')"
+          />
           <quote-likes :stats="item.stats" />
         </div>
       </template>
