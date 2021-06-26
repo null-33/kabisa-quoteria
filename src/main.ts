@@ -5,6 +5,9 @@ import store from './store';
 import vuetify from './plugins/vuetify';
 import './firebase';
 
+import '@/assets/scss/typography.scss';
+import '@/assets/scss/main.scss';
+
 Vue.config.productionTip = false;
 
 new Vue({
@@ -13,3 +16,6 @@ new Vue({
   vuetify,
   render: (h) => h(App),
 }).$mount('#app');
+
+store.dispatch('init');
+store.dispatch('fetchAllQuotes');

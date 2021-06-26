@@ -1,0 +1,14 @@
+.kq-quote {
+  & &__quote {
+    &::before,
+    &::after {
+      content: '"';
+    }
+  }
+
+  & &__author {
+    &::before {
+      content: '—';
+    }
+  }
+}
