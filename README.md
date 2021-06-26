@@ -12,7 +12,7 @@ This is the Kabisa Quoteria app. It will show you random quotes from a fresh sel
 
 ## Configuration
 
-Please get your personalised `.env.local` file from your local shop.
+Please get your personalised `.env.local` file from your local shop and put it in the root of the project folder.
 
 ## Project setup
 
